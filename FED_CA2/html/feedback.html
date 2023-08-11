@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link href="../css/index_2.css" rel="stylesheet"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- 
+            Author: Swaathi Lakshmanan
+            Class: DISM/FT/1A/05
+            CA2
+            Theme: Interactive webiste
+            Page: Feedback 
+            Date:7/8/2022
+            File name: feedback.html
+        -->
+
+    <title>Feedback</title>
+
+</head>
+<body>
+    <header>
+      <!-- navigation -->
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <button class="navbar-toggler but-dec" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span><i class="bi bi-list"></i></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item roboto h5">
+                            <a class="nav-link" href="index.html">About me</a>
+                        </li>
+                        <li class="nav-item roboto h5">
+                            <a class="nav-link" href="courses.html">SP's courses</a>
+                        </li>
+                        <li class="nav-item roboto h5">
+                            <a class="nav-link" href="careers.html">Careers</a>
+                        </li>
+                        <li class="nav-item roboto h5">
+                            <a class="nav-link active" href="feedback.html">Feedback</a>
+                        </li>
+                    </ul>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-dark roboto" data-bs-toggle="modal" data-bs-target="#Modal">
+                      Join my Newsletter
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="ModalLabel">Join my Newsletter</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="input-group mb-3">
+                              <input type="text" class="form-control" placeholder="Your name" aria-label="Username">
+                              <span class="input-group-text">@</span>
+                              <input type="text" class="form-control" placeholder="gmail.com" aria-label="Server">
+                            </div>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-dark">Submit</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div> 
+        </nav>
+        <div><img class="tinyImg" alt="tiny image" src="../images/cuteStuff.PNG"></div>
+        <div>
+          <p class="ms-3 title2 rubik">Feedback</p>
+        </div>     
+    </header>
+
+    <article>
+      <!-- main form -->
+      <div class="container-fluid">
+        <div class="card  but-dec shadow m-3">
+          <div class="card-body">
+            <div class="row">              
+                
+                  <div class="col-md-6">
+                  <form>
+                  <p class="mb-3">What pages have you visited</p>
+                  <div class="form-check form-check1">
+                    <input class="form-check-input" type="checkbox" value="" id="aboutmecheck">
+                    <label class="form-check-label" for="aboutmecheck">
+                      About me
+                    </label>
+                  </div>
+                  <div class="form-check form-check1">
+                    <input class="form-check-input" type="checkbox" value="" id="spcoursescheck">
+                    <label class="form-check-label" for="spcoursescheck">
+                      SP's courses
+                    </label>
+                  </div>
+                  <div class="form-check form-check1 mb-3">
+                    <input class="form-check-input" type="checkbox" value="" id="careeroptcheck">
+                    <label class="form-check-label" for="careeroptcheck">
+                      Career options
+                    </label>
+                  </div>
+                  <p class="mb-3">What's your favourite page?</p>
+                  <select class="form-select mb-3" aria-label="select">
+                    <option value="aboutmesel">About me</option>
+                    <option value="spcoursessel">Career options</option>
+                    <option value="careeroptsel">SP's courses</option>
+                  </select>
+                  <p class="mb-3">Was the information in this website useful?</p>
+                  <div class="form-check2">
+                    <input class="form-check-input" type="radio" name="flexRadio" id="radioyes" checked> 
+                    <label class="form-check-label" for="radioyes">
+                      Yes
+                    </label>
+                  </div>
+                  <div class="form-check2 mb-3">
+                    <input class="form-check-input" type="radio" name="flexRadio" id="radiono">
+                    <label class="form-check-label" for="radiono">
+                      No
+                    </label>
+                  </div>
+                  <p class="mb-3">To what extent did you like this website?</p>
+                  <input type="range" class="form-range" id="formRange">
+                </form>                
+              </div>
+              <div class="col-md-6">
+                  <form>
+                  <p class="mb-3">Do you have any other feedback?*</p>
+                  <div class="input-group mb-3">
+                    <textarea class="form-control d-inline-block" rows="14" cols="70" aria-label="textarea" required></textarea>                                       
+                  </div>
+                  <button type="submit" class="btn btn-dark m-0" id="check">Submit</button>
+                </form>
+                </div>                                         
+            </div>
+          </div>
+        </div>
+      </div>
+  <!-- validation for main form -->
+      <script>
+        $('#check').on("click", function(){
+          let valid = true;
+          $('[required]').each(function() {
+            if ($(this).is(':invalid') || !$(this).val()) valid = false;
+          })
+          
+          if (!valid) alert("The required feilds need to be filled!");
+          else alert('Thank you for your feedback!');
+        })
+      </script>
+
+      <!-- commenting section -->
+      <div class="container-fluid commenting">
+        <p>Add a comment:</p>
+        <div class="card but-dec shadow m-3">
+          <div class="card-body">
+            <form>
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="basic-addon1">@</span>
+                </div>
+                <input type="text" class="form-control" placeholder="Your name" id="userName" aria-label="Username" aria-describedby="basic-addon1">
+              </div>
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="basic-addon4">title</span>
+                </div>
+                <input type="text" class="form-control" placeholder="comment title" id="commentTitle" aria-label="title" aria-describedby="basic-addon4">
+              </div>
+              <div class="input-group">
+                <span class="input-group-text">comment</span>
+                <textarea class="form-control" id="commentContent" aria-label="With textarea"></textarea>
+              </div>
+              <button type="button" id="comsub" onClick="comsub_Pressed()" class="btn btn-dark ms-0 mt-3">Submit</button>
+            </form>
+          </div>     
+        </div>
+      </div>
+
+    </article>
+      <!-- footer -->
+    <footer class="bg-dark text-light text-center roboto footerHeight">
+      <span><a href="" class="link-light text-decoration-none roboto">Get in touch with me</a> &#x2022; &#169; Swaathi 2022</span>
+    </footer> 
+    <script src="../js/letters.js" defer></script>
+    <script src="../js/comments.js"></script>
+    <script src="../js/spinner.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>   
+</body>
+
+</html>
+
+<!-- credits -->
+<!-- https://www.streamlinehq.com/illustrations/bangalore -->

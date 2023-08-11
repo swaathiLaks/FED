@@ -1,0 +1,215 @@
+/*  
+            Author: Swaathi Lakshmanan
+            Class: DISM/FT/1A/05
+            CA2
+            Theme: Interactive webiste
+            Date:7/8/2022
+            File name: index_2.css
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:ital,wght@0,500;1,500&family=Rubik+Mono+One&display=swap');
+
+body{
+  background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+}
+
+/* classes to remove border on elements */
+.but-dec{
+  border: none;
+}
+
+.but-dec:focus{
+  box-shadow: none;
+}
+
+/* fonys used consistently accross all pages */
+.rubik{
+  font-family: 'Rubik Mono One', sans-serif;
+}
+
+.roboto{
+  font-family: 'Roboto', sans-serif;
+}
+
+.mono{
+  font-family: 'Roboto Mono', monospace;
+}
+
+/* image filter css */
+.img_black {
+  filter: grayscale(100%);
+}
+
+/* cropping size of carousel */
+.cropped{
+  width: 90%;
+  height: 40rem;
+  margin: auto;
+}
+
+/* text size crediting carousel images*/
+.t1{
+  font-size: 0.75rem;
+}
+
+/* overflow hidden class */
+.overflow {
+  overflow: hidden;
+}
+
+/* title for about me page */
+.title{
+  font-size: 10rem;
+}
+
+/* overlay text (on carousel) classes for about me page */
+.overlay { 
+  color:#fff;
+  position:absolute;
+  z-index:12;
+  top:50%;
+  left:0;
+  width:100%;
+  text-align:center;
+}
+
+/* title for corses, career and feedback page */
+.title2{
+  font-size: 5rem;
+}
+
+/* sp courses slider classes */
+.slider::-webkit-scrollbar{
+  display: none;
+}
+
+.slider-content{
+  left: 0;
+  transition: 0.5s;
+  position: relative;
+  min-width: 24%;
+}
+
+.figureCSS{
+  text-align: center;
+  width: 100%;
+}
+
+.tinyImg{
+  width: 7rem;
+  right: 2px;
+  position: fixed;
+  top: 50px;
+  z-index: 20;
+}
+
+.zindex{
+  z-index: 5;
+}
+
+/* border for sp images in courses page */
+.spimg{
+  border: 5px solid whitesmoke;
+  border-radius: 50%;
+}
+
+/* footer size */
+.footerHeight{
+  height: 2.5rem;
+  justify-content: center;
+}
+
+/* cursor change for careers page */
+.point:hover{
+  cursor: pointer;
+}
+
+/* media */
+
+
+@media only screen and (max-width: 1097px) {
+  .cropped{
+    width: 90%;
+    height: 20rem;
+    margin: auto;
+  }
+
+  .title{
+    font-size: 8rem;
+  }
+ 
+  .title2{
+    font-size: 5rem;
+  }
+
+  .slider-content{
+    min-width: 40%;
+  }
+}
+
+@media only screen and (max-width: 1020px) {
+  .title{
+    font-size: 6rem;
+  }
+
+  .title2{
+    font-size: 4rem;
+  }
+
+  .slider-content{
+    min-width: 50%;
+  }
+
+}
+
+@media only screen and (max-width: 660px) {
+  .title{
+    font-size: 4rem;
+  }
+
+  .title2{
+    font-size: 3rem;
+  }
+
+  .slider-content{
+    min-width: 60%;
+  }
+
+}
+
+@media only screen and (max-width: 560px) {
+  .cropped{
+    width: 90%;
+    height: 10rem;
+    margin: auto;
+  }
+
+  .slider-content{
+    min-width: 60%;
+    height: fit-content;
+  }
+
+
+}
+  
+@media only screen and (max-width: 490px) {
+  .title{
+    font-size: 2.5rem;
+  }
+
+  .title2{
+    font-size: 2rem;
+  }
+
+  .slider-content{
+    min-width: 90%;
+  }
+
+}
+
+@media only screen and (max-width: 280px) {
+  .title{
+    font-size: 2.3rem;
+  }
+
+}
