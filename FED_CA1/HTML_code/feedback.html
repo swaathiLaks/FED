@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- 
+            Author: Swaathi Lakshmanan
+            Class: DISM/FT/1A/05
+            CA1
+            Theme: My Career Prospect
+            Page:Feedback
+            Date:30/4/2022
+            File name: feedback.html
+        -->
+        <meta charset="utf-8" />
+        <title>Feedback</title>
+
+        <!-- links -->
+        <link href="../CSS_code/index_one.css" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet">
+        <!-- end links -->
+    </head>
+
+    <!-- start body -->
+    <body>
+        <!-- start header -->
+        <header>
+            <!-- start nav -->
+            <nav>
+                <ul>
+                    <li><a href="index.html">About me<i class="material-icons">north_east</i></a></li>
+                    <li><a href="courses.html">SP’s courses<i class="material-icons">north_east</i></a></li>
+                    <li><a href="careers.html">Career options<i class="material-icons">north_east</i></a></li>
+                    
+                </ul>
+            </nav>
+            <!-- end nav -->
+
+            <!-- start heading -->
+            <div>
+                <h1 class="heading_2" >Do you have any feedback?</h1>
+            </div>
+            <!-- end heading -->
+
+        </header>
+        <!-- end header -->
+
+        <!-- start content -->
+        <form action="feedback.html" method="post" id="ca1_form" enctype="multipart/form-data">
+            <div class="block_el-8-a">
+                <p>What pages have you visited?</p>
+                <input type="checkbox" name="aboutMe" id="aboutMe">
+                <label for="aboutMe" >About me</label><br>
+                <input type="checkbox" name="spCourses" id="spCourses">
+                <label for="spCourses">SP's courses</label><br>
+                <input type="checkbox" name="careerOptions" id="careerOptions">
+                <label for="careerOptions">Career Options</label><br>
+            </div>
+            <div class="block_el-8-a">
+                <label for="favPage">What's your favourite page? </label><br>
+                <select name="favPage" class="widget_class-a" id="favPage">
+                    <option>About me</option>
+                    <option>SP's courses</option>
+                    <option>Career options</option>
+                </select>
+            </div>
+            <div class="block_el-8-a">
+                <label for="visitdate">When did you visit this website? </label>
+                <input class="widget_class-a" type="date" name="visitdate" id="visitdate">
+            </div>
+            <!-- start table -->
+            <!-- can not put footer -->
+            <div class="block_el-8-a">
+                <table>
+                    <colgroup>
+                        <col span="1" class="columngroup-a">
+                        <col span="2" id="columngroup-b">                        
+                    </colgroup>
+                    <!-- <colgroup>
+                        <col span="3">
+                        <col span="2" id="coloumngroup-b">
+                    </colgroup> -->
+                    <thead class="rowgroup-a">
+                        <tr>
+                            <th> </th>
+                            <th>Yes</th>
+                            <th>No</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="td_class">Was the information on this website useful?
+                            </td>
+                            <td><input type = "radio" name="useful"></td>
+                            <td><input type = "radio" name="useful"></td>
+                        </tr>
+                        <tr>
+                            <td class="td_class">Would you recommend this website to someone else?
+                            </td>
+                            <td><input type = "radio" name="recommend"></td>
+                            <td><input type = "radio" name="recommend"></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2" class="td_class">Do you have any other feedback?*
+                            </td>
+                            <td colspan="2"><textarea class="form_textarea" required></textarea></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><label id="upload_file_label" for="upload_file">Upload a file.</label>
+                                <input type="file" name="file" id="upload_file" /></td>
+                        </tr>
+                        <tr>
+                            <td class="td_class">To what extent did you like this website</td>
+                            <td colspan="2">1   <input type="range" min = "1" max = "10" value="5">   10</td>
+                        </tr>
+                        <tr>
+                            <td class="td_class">Please subscribe to my newsletter.</td>
+                            <td colspan="2"><input  id="email_area" type="email" placeholder="enter your email" pattern="^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <input type="reset" value="Reset">
+                <input type="submit" value="Submit">
+                
+            </div>
+            <!-- end table -->
+        </form>  
+        
+
+        <!-- end content -->
+
+        <!-- start footer -->
+        <footer class="footer_space">
+            <a href="mailto:swaathi.lakshmanan@gmail.com" ><i class="material-icons">sentiment_satisfied</i>  Get in touch with me</a>
+            <p class="copyright">&#169; 2022 Swaathi</p>
+        </footer>
+        <!-- end footer -->
+        
+    </body>
+    <!-- end body -->
+</html>
